@@ -1,0 +1,39 @@
+<% if (data.back) { %>
+<a href="javascript:;" class="pop-stack">&laquo; <%= data.back.drink %></a>
+<% } %>
+<h1><%= data.recipe.drink %></h1>
+
+<h2>Ingredients</h2>
+
+<ul class="ingredients">
+  <% data.recipe.ingredients.forEach(function(i) { %>
+  <li> <%= i %>
+  <% }); %>
+</ul>
+
+<h2>Method</h2>
+
+<p class="method"><%= data.recipe.method %></p>
+
+<% if (data.recipe.builds[0]) { %>
+You can also make:
+<ul>
+  <% data.recipe.builds[0].forEach(function(build) { %>
+  <li> <a class="push-stack" href="javascript:;" data-drink="<%= build.recipe.drink %>">
+      <%= build.recipe.drink %>
+    </a>
+  <% }); %>
+</ul>
+<% } %>
+
+Add one ingredient:
+<ul>
+  <% data.recipe.builds[1].forEach(function(build) { %>
+  <li> 
+    <%= build.additions.join() %>
+    &rArr;
+    <a class="push-stack" href="javascript:;" data-drink="<%= build.recipe.drink %>">
+      <%= build.recipe.drink %>
+    </a>
+  <% }); %>
+</ul>
