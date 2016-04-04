@@ -1,1 +1,40 @@
 @import "seattletimes";
+
+main.interactive {
+  font-family: @df-sans;
+  font-size: 15px;
+  max-width: 630px;
+  margin: auto;
+}
+
+nav.ingredients {
+  text-align: center;
+
+  hr {
+    border: none;
+    border-bottom: 1px solid @st-light-purple;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input + label {
+    color: @df-middle-gray;
+    padding: 2px 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: none;
+    margin: 4px;
+  }
+
+  label.next-step {
+    border-bottom: 1px dashed @st-dark-purple;
+  }
+
+  input:checked + label {
+    color: @st-dark-purple;
+    font-weight: bold;
+    border-bottom: 1px solid @st-dark-purple;
+  }
+}

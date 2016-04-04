@@ -3,22 +3,31 @@
 // var track = require("./lib/tracking");
 
 require("component-responsive-frame/child");
+
+var $ = require("./lib/qsa");
 var dot = require("./lib/dot");
 var template = dot.compile(require("./_recipe.html"));
 
-var stack = [];
 var lookup = {};
-var current = null;
+var components = {};
+
+var recipeBox = document.querySelector(".recipe-panel");
+var navigation = document.querySelector("nav.ingredients");
+var drinkList = document.querySelector("ul.recipes");
 
 //build the hash for similarity checking
 //also do some basic reformatting
 window.recipeData.forEach(function(row) {
   var flags = {};
-  row.progression.split("\n").forEach(p => flags[p] = true);
+  row.progression.split("\n").forEach(p => components[p] = flags[p] = true);
   row.progression = flags;
   row.ingredients = row.ingredients.split("\n").filter(i => i);
   lookup[row.drink] = row;
 });
+
+var titleCase = function(s) {
+  return s.replace(/(^|\s)(\w)/g, (m, _, a) => " " + a.toUpperCase());
+};
 
 //compute ingredients needed to get from a to b
 var findDistance = function(a, b) {
@@ -44,20 +53,40 @@ window.recipeData.forEach(function(row) {
   });
 });
 
-var container = document.querySelector(".drink-guide");
-container.addEventListener("click", function(e) {
-  var target = e.target;
-  if (e.target.classList.contains("push-stack")) {
-    var previous = current;
-    if (current) stack.push(current);
-    var id = e.target.getAttribute("data-drink");
-    var drink = lookup[id];
-    current = drink;
-    container.innerHTML = template({ back: previous, recipe: current });
-  }
-  if (e.target.classList.contains("pop-stack")) {
-    current = stack.pop();
-    var previous = stack[stack.length - 1];
-    container.innerHTML = template({ back: previous, recipe: current });
+var onCheck = function() {
+  //set up next steps
+  var labels = $(".drink-label", navigation);
+  labels.forEach(l => l.classList.remove("next-step"));
+
+  var required = $(`input[type=checkbox]`, navigation).filter(el => el.checked).map(el => el.id);
+  var drinks = window.recipeData.filter(function(recipe) {
+    var strikes = [];
+    for (var key in recipe.progression) {
+      if (required.indexOf(key) == -1) strikes.push(key);
+    }
+    if (strikes.length == 1) {
+      console.log(strikes);
+      document.querySelector(`[for="${strikes[0]}"]`).classList.add("next-step");
+    }
+    return !strikes.length;
+  });
+  drinkList.innerHTML = drinks.map(function(d) {
+    return `
+<li>
+  <a href="javascript:;" data-recipe="${d.drink}" class="recipe-link">${d.drink}</a>
+</li>
+    `;
+  }).join("\n");
+  recipeBox.innerHTML = "";
+};
+navigation.addEventListener("change", onCheck);
+onCheck();
+
+drinkList.addEventListener("click", function(e) {
+  console.log(e.target.classList);
+  if (e.target.classList.contains("recipe-link")) {
+    var recipe = lookup[e.target.getAttribute("data-recipe")];
+    console.log(recipe);
+    recipeBox.innerHTML = template(recipe);
   }
 });
