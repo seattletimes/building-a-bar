@@ -64,8 +64,8 @@ var onCheck = function() {
     for (var key in recipe.progression) {
       if (required.indexOf(key) == -1) strikes.push(key);
     }
+    //indicate near-misses
     if (strikes.length == 1) {
-      console.log(strikes);
       document.querySelector(`[for="${strikes[0]}"]`).classList.add("next-step");
     }
     return !strikes.length;
