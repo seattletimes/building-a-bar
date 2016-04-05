@@ -1,5 +1,9 @@
 <h1><%= data.drink %></h1>
 
+<% if (data.image) { %>
+<img src="./assets/images/<%= data.image %>">
+<% } %>
+
 <h2>Ingredients</h2>
 
 <ul class="ingredients">

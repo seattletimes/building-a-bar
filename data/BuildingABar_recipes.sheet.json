@@ -2,49 +2,54 @@
   {
     "category": "whiskey",
     "drink": "Old Fashioned",
+    "image": "old-fashion-close.jpg",
     "progression": "whiskey",
-    "ingredients": "2 oz. bourbon or rye whiskey\n1 sugar cube or 1 tsp. superfine\nsugar or 2 tsp. simple syrup\n2 dashes Angostura bitters\n(or any bitters, really)\n",
+    "ingredients": "2 oz. bourbon or rye whiskey\n1 sugar cube or 1 tsp. superfine sugar or 2 tsp. simple syrup\n2 dashes Angostura bitters (or any bitters, really)\n",
     "garnish": "lemon twist",
     "method": "Place sugar cube in glass and soak with bitters and a few drops of water; crush to paste with wooden muddler. You can use loose sugar instead, or simple syrup (skip the added water if the latter), but the ritual contributes to the experience. Add whiskey and stir to mix and dissolve sugar; add ice and stir again to chill. Garnish.\n"
   },
   {
     "category": "whiskey",
     "drink": "Manhattan",
+    "image": "manhattan-close.jpg",
     "progression": "whiskey\nsweet vermouth",
     "ingredients": "2 oz. rye whiskey\n1 oz. sweet vermouth\n2 dashes Angostura bitters\n",
     "garnish": "lemon twist or cherry",
     "method": "Stir with ice to chill; strain into chilled glass. Garnish.\n",
-    "note": "Use bourbon if the cause moves you. This is a good drink to try out different bitters —Boker’s and Abbott’s are very good, as are Dale DeGroff’s aromatic pimento bitters.\n"
+    "note": "Use bourbon if the cause moves you. This is a good drink to try out different bitters — Boker’s and Abbott’s are very good, as are Dale DeGroff’s aromatic pimento bitters.\n"
   },
   {
     "category": "whiskey",
     "drink": "Boulevardier",
+    "image": "boulevardier-close.jpg",
     "progression": "whiskey\ncampari\nsweet vermouth",
     "ingredients": "1 oz. bourbon\n1 oz. sweet vermouth\n1 oz. Campari\n",
     "garnish": "orange twist",
-    "method": "Build drink in ice–filled rocks glass; stir to combine, and garnish with orange wheel. To serve straight-up, stir ingredients with ice and strain into chilled cocktail glass; garnish with orange twist.\n"
+    "method": "Build drink in ice-filled rocks glass; stir to combine, and garnish with the orange wheel. To serve straight-up, stir ingredients with ice and strain into chilled cocktail glass; garnish with orange twist.\n"
   },
   {
     "category": "whiskey",
     "drink": "Whiskey Sour",
+    "image": "whiskey-sour-close.jpg",
     "progression": "whiskey",
     "ingredients": "2 oz. rye whiskey or bourbon\n3/4 oz. lemon juice\n1/2 oz. simple syrup\n1/4 oz. egg white (optional)\n",
     "garnish": "cherry and lemon wheel",
-    "method": "Shake with ice to chill; strain into chilled sour or cocktail glass, or strain into ice–filled rocks glass.\n\nVariation: Float 1/2 oz. of dry red wine atop the finished drink to make a New York Sour.\n"
+    "method": "Shake with ice to chill; strain into chilled sour or cocktail glass, or strain into ice-filled rocks glass.\n\nVariation: Float 1/2 oz. of dry red wine atop the finished drink to make a New York Sour.\n"
   },
   {
     "category": "gin",
     "drink": "Negroni",
+    "image": "negroni-close.jpg",
     "progression": "gin\nsweet vermouth\ncampari",
     "ingredients": "1 oz. gin\n1 oz. sweet vermouth\n1 oz. Campari\n",
     "garnish": "small orange wheel or orange twist",
-    "method": "Build drink in ice–filled rocks glass; stir to combine, and garnish with orange wheel. To serve straight-up, stir ingredients with ice and strain into chilled cocktail glass; garnish with orange twist.\n"
+    "method": "Build drink in ice-filled rocks glass; stir to combine, and garnish with orange wheel. To serve straight-up, stir ingredients with ice and strain into chilled cocktail glass; garnish with orange twist.\n"
   },
   {
     "category": "gin",
     "drink": "Jasmine",
     "progression": "gin\ncampari\ncointreau",
-    "ingredients": "11/2 oz. gin\n3/4 oz. lemon juice\n1/4 oz. Campari\n1/4 oz. Cointreau\n",
+    "ingredients": "1 1/2 oz. gin\n3/4 oz. lemon juice\n1/4 oz. Campari\n1/4 oz. Cointreau\n",
     "garnish": "lemon twist",
     "method": "Shake with ice to chill; strain into chilled cocktail glass. Garnish.\n"
   },
@@ -67,7 +72,7 @@
     "category": "gin",
     "drink": "Martini",
     "progression": "gin\ndry vermouth",
-    "ingredients": "1 1/2 oz. dry gin\n3/4 oz. dry vermouth\n1 dash orange bitters (optional,\nbut desired)\n",
+    "ingredients": "1 1/2 oz. dry gin\n3/4 oz. dry vermouth\n1 dash orange bitters (optional, but desired)\n",
     "garnish": "lemon twist",
     "method": "Stir with ice to chill; strain into chilled glass. Garnish.\n"
   },
@@ -90,6 +95,7 @@
   {
     "category": "vodka",
     "drink": "Harrington Cocktail",
+    "image": "orange.jpg",
     "progression": "vodka\ngreen chartreuse\ncointreau",
     "ingredients": "1 1/2 oz. vodka\n1/4 oz. green Chartreuse\n1/8 oz. Cointreau\n",
     "garnish": "orange twist",
@@ -108,7 +114,7 @@
     "progression": "tequila\nsweet vermouth\ncampari",
     "ingredients": "1 oz. reposado tequila prefered\n1 oz. sweet vermouth\n1 oz. Campari\n",
     "garnish": "grapefruit twist",
-    "method": "Build in ice–filled glass, stir to combine. Garnish. Tip: Substitute mezcal for tequila.\n"
+    "method": "Build in an ice-filled glass, stir to combine. Garnish. Tip: Substitute mezcal for tequila.\n"
   },
   {
     "category": "tequila",
@@ -122,7 +128,7 @@
     "category": "tequila",
     "drink": "Tommy's Margarita",
     "progression": "tequila",
-    "ingredients": "2 oz. tequila (blanco or reposado,\nyour call)\n3/4 oz. lime juice\n3/4 oz. agave syrup, to taste\n",
+    "ingredients": "2 oz. tequila (blanco or reposado, your call)\n3/4 oz. lime juice\n3/4 oz. agave syrup, to taste",
     "garnish": "lime wedge",
     "method": "Shake with ice to chill, strain into glass filled with fresh ice. Garnish with lime wedge. Option: Before mixing drink, moisten the lip of the serving glass with a cut lime wedge, and rim the glass with coarse salt.\n"
   },
@@ -130,7 +136,7 @@
     "category": "tequila",
     "drink": "Paloma",
     "progression": "tequila",
-    "ingredients": "3 ounces squeezed white grapefruit juice\n2 ounces blanco or silver tequila\n½ ounce freshly squeezed lime juice\n½ ounce agave nectar\nSea salt to rim the glass\nClub soda\n",
+    "ingredients": "3 ounces squeezed white grapefruit juice\n2 ounces blanco or silver tequila\n½ ounce freshly squeezed lime juice\n½ ounce agave nectar\nSea salt to rim the glass\nClub soda",
     "garnish": "lime wheel",
     "method": "Fill cocktail shaker two-thirds full with ice. Add grapefruit juice, tequila, lime juice and agave nectar. Shake well and strain into an ice-filled Collins glass rimmed with sea salt. Top with a splash of club soda, and garnish with lime wheel.\n",
     "note": "Grapefruit soda may be hard to find. This is an updated version of the paloma. It was the best among the handful of paloma recipes I tested."

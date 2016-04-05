@@ -12,7 +12,7 @@ var lookup = {};
 var components = {};
 
 var recipeBox = document.querySelector(".recipe-panel");
-var navigation = document.querySelector("nav.ingredients");
+var navigation = document.querySelector("ul.components");
 var drinkList = document.querySelector("ul.recipes");
 
 //build the hash for similarity checking
@@ -78,15 +78,17 @@ var onCheck = function() {
     `;
   }).join("\n");
   recipeBox.innerHTML = "";
+  recipeBox.classList.add("empty");
 };
 navigation.addEventListener("change", onCheck);
 onCheck();
 
 drinkList.addEventListener("click", function(e) {
-  console.log(e.target.classList);
   if (e.target.classList.contains("recipe-link")) {
+    $(".recipe-link.selected").forEach(el => el.classList.remove("selected"));
+    e.target.classList.add("selected");
     var recipe = lookup[e.target.getAttribute("data-recipe")];
-    console.log(recipe);
     recipeBox.innerHTML = template(recipe);
+    recipeBox.classList.remove("empty");
   }
 });

@@ -3,16 +3,29 @@
 main.interactive {
   font-family: @df-sans;
   font-size: 15px;
-  max-width: 630px;
-  margin: auto;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px 0;
+  border-top: 1px solid @df-light-gray;
+  border-bottom: 1px solid @df-light-gray;
+  .display-flex();
 }
 
-nav.ingredients {
-  text-align: center;
+ul.components {
+  // .flex(1 1 150px);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
 
-  hr {
+  li:not(:first-child) {
+    border-top: 1px solid @df-light-gray;
+  }
+
+  li.divider {
     border: none;
-    border-bottom: 1px solid @st-light-purple;
+    border-top: 1px solid @st-dark-purple;
+    height: 1px;
   }
 
   input[type=checkbox] {
@@ -20,21 +33,83 @@ nav.ingredients {
   }
 
   input + label {
-    color: @df-middle-gray;
-    padding: 2px 8px;
-    display: inline-block;
+    padding: 3px 8px 3px 0;
+    display: block;
     text-transform: uppercase;
-    border-bottom: none;
-    margin: 4px;
+    cursor: pointer;
+    // color: lighten(@df-dark-gray, 10%);
+
+    &::before {
+      content: " ";
+      font-weight: normal;
+      width: 20px;
+      text-align: center;
+      display: inline-block;
+    }
   }
 
   label.next-step {
-    border-bottom: 1px dashed @st-dark-purple;
+    &::before {
+      content: "+";
+    }
   }
 
   input:checked + label {
-    color: @st-dark-purple;
     font-weight: bold;
-    border-bottom: 1px solid @st-dark-purple;
+    color: black;
+    // background: lighten(@df-light-gray, 3%);
+
+    &::before {
+      content: "✔"
+    }
+  }
+}
+
+.recipes {
+  // .flex(1 1 150px);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  border-left: 1px solid @df-middle-gray;
+
+  li {
+    border-bottom: 1px solid @df-light-gray;
+  }
+
+  a {
+    display: block;
+    padding: 3px 8px;
+    color: black;
+    cursor: pointer;
+
+    &.selected {
+      background: lighten(@df-light-gray, 3%);
+    }
+  }
+}
+
+.recipe-panel {
+  .flex(1 1 300px);
+  border-left: 1px solid @df-middle-gray;
+  position: relative;
+  padding: 0 8px;
+
+  &.empty::after {
+    display: block;
+    padding: 40px;
+    text-align: center;
+    content: "Select a drink for the recipe";
+    color: @df-middle-gray;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 16px;
   }
 }
