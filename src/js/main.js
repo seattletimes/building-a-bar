@@ -29,30 +29,7 @@ var titleCase = function(s) {
   return s.replace(/(^|\s)(\w)/g, (m, _, a) => " " + a.toUpperCase());
 };
 
-//compute ingredients needed to get from a to b
-var findDistance = function(a, b) {
-  var distance = 0;
-  var additions = [];
-  for (var k in b) {
-    if (!(k in a)) {
-      distance++;
-      additions.push(k);
-    }
-  }
-  return { distance, additions }
-};
-
-//now build a series of distance arrays - sadly n^2
-window.recipeData.forEach(function(row) {
-  row.builds = {};
-  window.recipeData.forEach(function(compare) {
-    if (compare == row) return;
-    var { distance, additions } = findDistance(row.progression, compare.progression);
-    if (!row.builds[distance]) row.builds[distance] = [];
-    row.builds[distance].push({ recipe: compare, additions });
-  });
-});
-
+//listener for checkbox toggles
 var onCheck = function() {
   //set up next steps
   var labels = $(".drink-label", navigation);
@@ -70,12 +47,13 @@ var onCheck = function() {
     }
     return !strikes.length;
   });
-  drinkList.innerHTML = drinks.map(function(d) {
+  drinkList.innerHTML = `<li class="instruction">You can make:` + drinks.map(function(d) {
     return `
 <li>
-  <a href="javascript:;" data-recipe="${d.drink}" class="recipe-link">${d.drink}</a>
-</li>
-    `;
+  <a data-recipe="${d.drink}" class="recipe-link ${d.image ? "media" : "" }">
+    ${d.drink}
+  </a>
+</li>`;
   }).join("\n");
   recipeBox.innerHTML = "";
   recipeBox.classList.add("empty");
@@ -83,6 +61,7 @@ var onCheck = function() {
 navigation.addEventListener("change", onCheck);
 onCheck();
 
+//listen for clicks on recipe names
 drinkList.addEventListener("click", function(e) {
   if (e.target.classList.contains("recipe-link")) {
     $(".recipe-link.selected").forEach(el => el.classList.remove("selected"));

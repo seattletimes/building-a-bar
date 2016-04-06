@@ -5,70 +5,85 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet'>
     <%= t.include("partials/_head.html") %>
   </head>
   <body>
 
     <responsive-child>
       <main class="interactive">
-        <ul class="components">
 
-          <li>
-            <input id="whiskey" type="checkbox" checked="checked">
-            <label class="drink-label" for="whiskey">Whiskey</label>
-          </li>
-          
-          <li>
-            <input id="vodka" type="checkbox">
-            <label class="drink-label" for="vodka">Vodka</label>
-          </li>
-            
-          <li>
-            <input id="gin" type="checkbox">
-            <label class="drink-label" for="gin">Gin</label>
-          </li>
-          
-          <li>
-            <input id="tequila" type="checkbox">
-            <label class="drink-label" for="tequila">Tequila</label>
-          </li>
+        <h2>Build the perfect home bar</h2>
 
-          <li class="divider"></li>
-            
-          <li>
-            <input id="sweet vermouth" type="checkbox">
-            <label class="drink-label" for="sweet vermouth">Sweet Vermouth</label>
-          </li>
-            
-          <li>
-            <input id="campari" type="checkbox">
-            <label class="drink-label" for="campari">Campari</label>
-          </li>
-            
-          <li>
-            <input id="cointreau" type="checkbox">
-            <label class="drink-label" for="cointreau">Cointreau</label>
-          </li>
-            
-          <li>
-            <input id="green chartreuse" type="checkbox">
-            <label class="drink-label" for="green chartreuse">Green Chartreuse</label>
-          </li>
-            
-          <li>
-            <input id="maraschino liqueur" type="checkbox">
-            <label class="drink-label" for="maraschino liqueur">Maraschino Liqueur</label>
-          </li>
-            
-          <li>
-            <input id="dry vermouth" type="checkbox">
-            <label class="drink-label" for="dry vermouth">Dry Vermouth</label>
-          </li>
+        <p class="chatter">So you have whiskey. What should you buy next? Mix and match ingredients on the left to discover which new cocktails can be made when you add to your bar. 
 
-        </ul>
+        <div class="panels">
+          <ul class="components">
 
-        <ul class="recipes"></ul>
-        <div class="recipe-panel empty"></div>
+            <li class="instruction">What's on your shelf?
+
+            <li>
+              <input id="whiskey" type="checkbox" checked="checked">
+              <label class="drink-label" for="whiskey">Whiskey</label>
+            </li>
+            
+            <li>
+              <input id="vodka" type="checkbox">
+              <label class="drink-label" for="vodka">Vodka</label>
+            </li>
+              
+            <li>
+              <input id="gin" type="checkbox">
+              <label class="drink-label" for="gin">Gin</label>
+            </li>
+            
+            <li>
+              <input id="tequila" type="checkbox">
+              <label class="drink-label" for="tequila">Tequila</label>
+            </li>
+
+            <!-- <li class="divider"></li>
+
+            <li class="instruction">Anything else? -->
+              
+            <li>
+              <input id="sweet vermouth" type="checkbox">
+              <label class="drink-label" for="sweet vermouth">Sweet Vermouth</label>
+            </li>
+              
+            <li>
+              <input id="campari" type="checkbox">
+              <label class="drink-label" for="campari">Campari</label>
+            </li>
+              
+            <li>
+              <input id="cointreau" type="checkbox">
+              <label class="drink-label" for="cointreau">Cointreau</label>
+            </li>
+              
+            <li>
+              <input id="green chartreuse" type="checkbox">
+              <label class="drink-label" for="green chartreuse">Green Chartreuse</label>
+            </li>
+              
+            <li>
+              <input id="maraschino liqueur" type="checkbox">
+              <label class="drink-label" for="maraschino liqueur">Maraschino Liqueur</label>
+            </li>
+              
+            <li>
+              <input id="dry vermouth" type="checkbox">
+              <label class="drink-label" for="dry vermouth">Dry Vermouth</label>
+            </li>
+
+          </ul>
+
+          <ul class="recipes"></ul>
+          <div class="recipe-panel empty"></div>
+
+        </div>
+
+        <p class="note">Most cocktail recipes also require garnishes and non-alcoholic mixers. Don’t forget to pick them up when you head to the store. Recipes are from "The Cocktail Chronicles" by Paul Clarke.
 
       </main>
     </responsive-child>

@@ -3,8 +3,9 @@
     "category": "whiskey",
     "drink": "Old Fashioned",
     "image": "old-fashion-close.jpg",
+    "video": 4833685682001,
     "progression": "whiskey",
-    "ingredients": "2 oz. bourbon or rye whiskey\n1 sugar cube or 1 tsp. superfine sugar or 2 tsp. simple syrup\n2 dashes Angostura bitters (or any bitters, really)\n",
+    "ingredients": "2 oz. bourbon or rye whiskey\n1 sugar cube or 1 teaspoon superfine sugar or 2 teaspoons simple syrup\n2 dashes Angostura bitters (or any bitters, really)\n",
     "garnish": "lemon twist",
     "method": "Place sugar cube in glass and soak with bitters and a few drops of water; crush to paste with wooden muddler. You can use loose sugar instead, or simple syrup (skip the added water if the latter), but the ritual contributes to the experience. Add whiskey and stir to mix and dissolve sugar; add ice and stir again to chill. Garnish.\n"
   },
@@ -12,6 +13,7 @@
     "category": "whiskey",
     "drink": "Manhattan",
     "image": "manhattan-close.jpg",
+    "video": 4833662400001,
     "progression": "whiskey\nsweet vermouth",
     "ingredients": "2 oz. rye whiskey\n1 oz. sweet vermouth\n2 dashes Angostura bitters\n",
     "garnish": "lemon twist or cherry",
@@ -22,6 +24,7 @@
     "category": "whiskey",
     "drink": "Boulevardier",
     "image": "boulevardier-close.jpg",
+    "video": 4833644040001,
     "progression": "whiskey\ncampari\nsweet vermouth",
     "ingredients": "1 oz. bourbon\n1 oz. sweet vermouth\n1 oz. Campari\n",
     "garnish": "orange twist",
@@ -31,15 +34,17 @@
     "category": "whiskey",
     "drink": "Whiskey Sour",
     "image": "whiskey-sour-close.jpg",
+    "video": 4833679945001,
     "progression": "whiskey",
-    "ingredients": "2 oz. rye whiskey or bourbon\n3/4 oz. lemon juice\n1/2 oz. simple syrup\n1/4 oz. egg white (optional)\n",
+    "ingredients": "2 oz. rye whiskey or bourbon\n¾ oz. lemon juice\n½ oz. simple syrup\n¼ oz. egg white (optional)\n",
     "garnish": "cherry and lemon wheel",
-    "method": "Shake with ice to chill; strain into chilled sour or cocktail glass, or strain into ice-filled rocks glass.\n\nVariation: Float 1/2 oz. of dry red wine atop the finished drink to make a New York Sour.\n"
+    "method": "Shake with ice to chill; strain into chilled sour or cocktail glass, or strain into ice-filled rocks glass.\n\nVariation: Float ½ oz. of dry red wine atop the finished drink to make a New York Sour.\n"
   },
   {
     "category": "gin",
     "drink": "Negroni",
     "image": "negroni-close.jpg",
+    "video": 4833644041001,
     "progression": "gin\nsweet vermouth\ncampari",
     "ingredients": "1 oz. gin\n1 oz. sweet vermouth\n1 oz. Campari\n",
     "garnish": "small orange wheel or orange twist",
@@ -49,7 +54,7 @@
     "category": "gin",
     "drink": "Jasmine",
     "progression": "gin\ncampari\ncointreau",
-    "ingredients": "1 1/2 oz. gin\n3/4 oz. lemon juice\n1/4 oz. Campari\n1/4 oz. Cointreau\n",
+    "ingredients": "1 ½ oz. gin\n¾ oz. lemon juice\n¼ oz. Campari\n¼ oz. Cointreau\n",
     "garnish": "lemon twist",
     "method": "Shake with ice to chill; strain into chilled cocktail glass. Garnish.\n"
   },
@@ -57,7 +62,7 @@
     "category": "gin",
     "drink": "Bijou",
     "progression": "gin\ngreen chartreuse\nsweet vermouth",
-    "ingredients": "1 oz. gin\n1 oz. green Chartreuse\n1 oz. sweet vermouth\n1 dash orange bitters\n",
+    "ingredients": "1 oz. gin\n1 oz. Green Chartreuse\n1 oz. sweet vermouth\n1 dash orange bitters\n",
     "garnish": "lemon twist",
     "method": "Stir with ice to chill; strain into chilled glass. Garnish.\n"
   },
@@ -65,14 +70,15 @@
     "category": "gin",
     "drink": "Last Word",
     "progression": "gin\ngreen chartreuse\nmaraschino liqueur",
-    "ingredients": "3/4 oz. gin\n3/4 oz. lime juice\n3/4 oz. green Chartreuse\n3/4 oz. maraschino liqueur\n",
+    "ingredients": "¾ oz. gin\n¾ oz. lime juice\n¾ oz. Green Chartreuse\n¾ oz. maraschino liqueur\n",
     "method": "Shake with ice to chill; strain into chilled glass.\n"
   },
   {
     "category": "gin",
     "drink": "Martini",
+    "video": 4833679944001,
     "progression": "gin\ndry vermouth",
-    "ingredients": "1 1/2 oz. dry gin\n3/4 oz. dry vermouth\n1 dash orange bitters (optional, but desired)\n",
+    "ingredients": "1 ½ oz. dry gin\n¾ oz. dry vermouth\n1 dash orange bitters (optional, but desired)\n",
     "garnish": "lemon twist",
     "method": "Stir with ice to chill; strain into chilled glass. Garnish.\n"
   },
@@ -80,7 +86,7 @@
     "category": "vodka",
     "drink": "Kangaroo Cocktail",
     "progression": "vodka\ndry vermouth",
-    "ingredients": "2 oz. vodka\n3/4 oz. dry vermouth\n",
+    "ingredients": "2 oz. vodka\n¾ oz. dry vermouth\n",
     "garnish": "lemon twist",
     "method": "Stir with ice to chill; strain into chilled glass. Garnish."
   },
@@ -88,24 +94,23 @@
     "category": "vodka",
     "drink": "Moscow Mule",
     "progression": "vodka",
-    "ingredients": "2 oz. vodka\n1/2 lime\n4 oz. chilled ginger beer\n",
+    "ingredients": "2 oz. vodka\n½ lime\n4 oz. chilled ginger beer\n",
     "garnish": "lime wedge",
     "method": "Squeeze lime half into ice-filled mug or glass and add remaining ingredients; stir and garnish.\n"
   },
   {
     "category": "vodka",
     "drink": "Harrington Cocktail",
-    "image": "orange.jpg",
     "progression": "vodka\ngreen chartreuse\ncointreau",
-    "ingredients": "1 1/2 oz. vodka\n1/4 oz. green Chartreuse\n1/8 oz. Cointreau\n",
+    "ingredients": "1 ½ oz. vodka\n¼ oz. Green Chartreuse\n1/8 oz. Cointreau\n",
     "garnish": "orange twist",
-    "method": "Stir with ice to chill"
+    "method": "Stir with ice to chill."
   },
   {
     "category": "vodka",
     "drink": "Cosmo",
     "progression": "vodka\ncointreau",
-    "ingredients": "2 oz. vodka\n1 oz. Cointreau\n1 oz.cranberry juice\n1 oz. Rose’s lime juice (Or add 1/2 ounce fresh lime juice and 1/2 ounce simple syrup)\n",
+    "ingredients": "2 oz. vodka\n1 oz. Cointreau\n1 oz. cranberry juice\n1 oz. Rose’s lime juice (Or add ½ ounce fresh lime juice and ½ ounce simple syrup)\n",
     "method": "Shake ingredients with cracked ice, then strain into a chilled cocktail glass. Add sugar to the rim if you like."
   },
   {
@@ -120,7 +125,7 @@
     "category": "tequila",
     "drink": "Margarita",
     "progression": "tequila\ncointreau",
-    "ingredients": "2 oz. blanco tequila\n3/4 oz. lime juice\n1 oz. Cointreau\n",
+    "ingredients": "2 oz. blanco tequila\n¾ oz. lime juice\n1 oz. Cointreau\n",
     "garnish": "lime wedge",
     "method": "Shake with ice to chill; strain into chilled cocktail glass or rocks glass filled with fresh ice. Option: Before mixing drink, moisten the lip of the serving glass with a cut lime wedge, and rim the glass with coarse salt.\n"
   },
@@ -128,7 +133,7 @@
     "category": "tequila",
     "drink": "Tommy's Margarita",
     "progression": "tequila",
-    "ingredients": "2 oz. tequila (blanco or reposado, your call)\n3/4 oz. lime juice\n3/4 oz. agave syrup, to taste",
+    "ingredients": "2 oz. tequila (blanco or reposado, your call)\n¾ oz. lime juice\n¾ oz. agave syrup, to taste",
     "garnish": "lime wedge",
     "method": "Shake with ice to chill, strain into glass filled with fresh ice. Garnish with lime wedge. Option: Before mixing drink, moisten the lip of the serving glass with a cut lime wedge, and rim the glass with coarse salt.\n"
   },
@@ -136,9 +141,25 @@
     "category": "tequila",
     "drink": "Paloma",
     "progression": "tequila",
-    "ingredients": "3 ounces squeezed white grapefruit juice\n2 ounces blanco or silver tequila\n½ ounce freshly squeezed lime juice\n½ ounce agave nectar\nSea salt to rim the glass\nClub soda",
+    "ingredients": "3 oz. squeezed white grapefruit juice\n2 oz. blanco or silver tequila\n½ oz. freshly squeezed lime juice\n½ oz. agave nectar\nSea salt to rim the glass\nClub soda",
     "garnish": "lime wheel",
     "method": "Fill cocktail shaker two-thirds full with ice. Add grapefruit juice, tequila, lime juice and agave nectar. Shake well and strain into an ice-filled Collins glass rimmed with sea salt. Top with a splash of club soda, and garnish with lime wheel.\n",
-    "note": "Grapefruit soda may be hard to find. This is an updated version of the paloma. It was the best among the handful of paloma recipes I tested."
+    "note": "Grapefruit soda may be hard to find. This is an updated version of the Paloma. It was the best among the handful of Paloma recipes I tested."
+  },
+  {
+    "category": "gin",
+    "drink": "Aviation",
+    "progression": "gin\nmaraschino liqueur",
+    "ingredients": "2 oz. gin \n2 teaspoons maraschino liqueur\n¾ oz. fresh-squeezed lemon juice\n",
+    "method": "Shake gin, maraschino and lemon juice with ice; strain into a chilled cocktail glass and serve.",
+    "note": "This is the take from cocktail historian David Wondrich.  "
+  },
+  {
+    "category": "gin",
+    "drink": "Pink Gin",
+    "progression": "gin",
+    "ingredients": "3 drops of Angostura bitters\n2 oz. gin ",
+    "method": "Splash the Angostura bitters into an Old-Fashioned glass. Roll them around until the inside is coated, dump out the excess, and pour in the Plymouth or London dry gin. Stir. Optional: add an ice cube or two.",
+    "note": "Recipe from cocktail historian David Wondrich.\n"
   }
 ]

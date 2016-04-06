@@ -1,8 +1,13 @@
-<h1><%= data.drink %></h1>
-
-<% if (data.image) { %>
+<% if (data.video) { %>
+<div class="video-container">
+  <iframe src='//players.brightcove.net/1509317113/VkZ4EROte_default/index.html?videoId=<%= data.video %>'
+  allowfullscreen webkitallowfullscreen mozallowfullscreen seamless></iframe>
+</div>
+<% } else if (data.image) { %>
 <img src="./assets/images/<%= data.image %>">
 <% } %>
+
+<h1><%= data.drink %></h1>
 
 <h2>Ingredients</h2>
 
@@ -15,3 +20,8 @@
 <h2>Method</h2>
 
 <p class="method"><%= data.method %></p>
+
+<% if (data.note) { %>
+<h2>Note</h2>
+<p class="note"><%= data.note %></p>
+<% } %>

@@ -3,12 +3,23 @@
 main.interactive {
   font-family: @df-sans;
   font-size: 15px;
-  max-width: 960px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px 0;
   border-top: 1px solid @df-light-gray;
   border-bottom: 1px solid @df-light-gray;
+
+  p.chatter {
+    font-family: @df-serif;
+  }
+}
+
+.panels {
   .display-flex();
+
+  @media @mobile {
+    .flex-wrap(wrap);
+  }
 }
 
 ul.components {
@@ -17,6 +28,11 @@ ul.components {
   padding: 0;
   list-style-type: none;
   position: relative;
+
+  @media @mobile {
+    .flex(0 0 50%);
+    font-size: 13px;
+  }
 
   li:not(:first-child) {
     border-top: 1px solid @df-light-gray;
@@ -28,6 +44,10 @@ ul.components {
     height: 1px;
   }
 
+  li.instruction {
+    color: @df-middle-gray;
+  }
+
   input[type=checkbox] {
     display: none;
   }
@@ -37,7 +57,7 @@ ul.components {
     display: block;
     text-transform: uppercase;
     cursor: pointer;
-    // color: lighten(@df-dark-gray, 10%);
+    color: @df-middle-gray;
 
     &::before {
       content: " ";
@@ -49,6 +69,7 @@ ul.components {
   }
 
   label.next-step {
+    color: black;
     &::before {
       content: "+";
     }
@@ -57,7 +78,6 @@ ul.components {
   input:checked + label {
     font-weight: bold;
     color: black;
-    // background: lighten(@df-light-gray, 3%);
 
     &::before {
       content: "✔"
@@ -66,15 +86,24 @@ ul.components {
 }
 
 .recipes {
-  // .flex(1 1 150px);
   list-style-type: none;
   margin: 0;
   padding: 0;
   min-width: 150px;
   border-left: 1px solid @df-middle-gray;
 
+  @media @mobile {
+    .flex(0 0 50%);
+    font-size: 13px;
+  }
+
   li {
     border-bottom: 1px solid @df-light-gray;
+  }
+
+  li.instruction {
+    padding: 0 3px;
+    color: @df-middle-gray;
   }
 
   a {
@@ -84,7 +113,7 @@ ul.components {
     cursor: pointer;
 
     &.selected {
-      background: lighten(@df-light-gray, 3%);
+      background: tan;
     }
   }
 }
@@ -104,12 +133,40 @@ ul.components {
   }
 
   h1 {
-    margin: 0;
-    font-size: 20px;
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-family: "Merriweather Sans", @df-sans;
   }
 
   h2 {
     margin: 0;
     font-size: 16px;
+  }
+
+  .video-container {
+    margin-bottom: 20px;
+  }
+
+  .ingredients {
+    margin-top: 0;
+  }
+}
+
+.video-container {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: percentage(9 / 16);
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
