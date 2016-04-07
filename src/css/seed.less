@@ -9,13 +9,19 @@ main.interactive {
   border-top: 1px solid @df-light-gray;
   border-bottom: 1px solid @df-light-gray;
 
+  h2 {
+    margin: 0;
+  }
+
   p.chatter {
     font-family: @df-serif;
+    margin: 0;
   }
 }
 
 .panels {
   .display-flex();
+  margin: 24px 0;
 
   @media @mobile {
     .flex-wrap(wrap);
@@ -97,7 +103,7 @@ ul.components {
     font-size: 13px;
   }
 
-  li {
+  li:not(:last-child) {
     border-bottom: 1px solid @df-light-gray;
   }
 
@@ -123,6 +129,11 @@ ul.components {
   border-left: 1px solid @df-middle-gray;
   position: relative;
   padding: 0 8px;
+
+  @media @mobile {
+    padding-top: 24px;
+    border-top: 1px solid @df-light-gray;
+  }
 
   &.empty::after {
     display: block;
